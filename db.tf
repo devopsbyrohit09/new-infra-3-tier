@@ -21,7 +21,7 @@ resource "aws_db_instance" "swiggy-db" {
   publicly_accessible          = false
 
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy = true
     ignore_changes  = all
   }
 }
