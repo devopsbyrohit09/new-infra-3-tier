@@ -7,7 +7,7 @@ resource "aws_autoscaling_group" "swiggy-web-asg" {
   }
   vpc_zone_identifier = [aws_subnet.swiggy-pub-sub-1.id, aws_subnet.swiggy-pub-sub-2.id]
   min_size            = 2
-  max_size            = 4
+  max_size            = 3
   desired_capacity    = 2
 }
 
